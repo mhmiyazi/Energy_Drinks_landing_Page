@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Landing Page">
+    <meta name="keywords" content="HTML, CSS, JavaScript,Bootstraps,jquery,#mhmiyazi,mh miyazi,MHMiyazi,mhmiyazi,mh miyazi">
+    <meta name="author" content="MH Miyazi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Drinks Website Landing Page</title>
+    <link rel="stylesheet" href="css/energy.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle" id="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="img/logo1.png" alt=""></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li class="list"><a href="#">Home</a></li>
+                <li class="list"><a href="#">Menu</a></li>
+                <li class="list"><a href="#">What's New</a></li>
+                <li class="list"><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Drink <br>It's <span>Sprite</span></h2>
+                <p>Energy drinks are designed to increase energy and mental performance. They contain a combination of caffeine, sugar, vitamins, amino acid derivatives and herbal extracts.
+                    <!---Copied from https://www.healthline.com/nutrition/energy-drinks#TOC_TITLE_HDR_2-->
+                </p>
+                <a class="buy" href="#">Buy it</a>
+                <a class="price_tag">Price: $1.25</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/img1.png" class="energy">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="imgSlider1()"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider2()"></li>
+            <li><img src="img/thumb3.png" onclick="imgSlider3()"></li>
+        </ul>
+        <!--All thumbs are redesigned from https://thumbs.dreamstime.com/b/set-different-aluminum-soda-cans-isolated-
+            white-russia-moscow-july-background-collection-various-brands-drinks-95426013.jpg -->
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="img/facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/twitter.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/instagram.png"></a>
+            </li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider1() {
+            document.querySelector('.logo img').src = 'img/logo1.png';
+            document.querySelector('.energy').src = 'img/img1.png';
+            document.querySelector('.textBox span').innerText = 'Sprite';
+            document.querySelector('.price_tag').innerText = 'Price: $1.25';
+            document.querySelector('.circle').style.backgroundColor = '#072564';
+            document.querySelector('.navigation .list').style.backgroundColor = '#072564';
+            document.querySelector('h2 span').style.color = '#072564';
+            document.querySelector('.logo img').style.border = '1px solid #072564';
+            document.querySelector('.logo img').style.borderRadius = '50%';
+            document.querySelector('.logo img').style.padding = '5px';
+            document.querySelector('.content a').style.backgroundColor = '#072564';
+            document.querySelector('.sci').style.backgroundColor = '#072564';
+        }
+
+        function imgSlider2() {
+            document.querySelector('.logo img').src = 'img/logo2.png';
+            document.querySelector('.energy').src = 'img/img2.png';
+            document.querySelector('.textBox span').innerText = 'Dr Pepper';
+            document.querySelector('.price_tag').innerText = 'Price: $1.10';
+            document.querySelector('.circle').style.backgroundColor = '#b41c18';
+            document.querySelector('.navigation .list').style.backgroundColor = '#b41c18';
+            document.querySelector('h2 span').style.color = '#b41c18';
+            document.querySelector('.logo img').style.border = '1px solid #b41c18';
+            document.querySelector('.logo img').style.borderRadius = '50%';
+            document.querySelector('.logo img').style.padding = '5px';
+            document.querySelector('.content a').style.backgroundColor = '#b41c18';
+            document.querySelector('.sci').style.backgroundColor = '#b41c18';
+        }
+
+        function imgSlider3() {
+            document.querySelector('.logo img').src = 'img/logo3.png';
+            document.querySelector('.energy').src = 'img/img3.png';
+            document.querySelector('.textBox span').innerText = 'Mirinda';
+            document.querySelector('.price_tag').innerText = 'Price: $0.99';
+            document.querySelector('.circle').style.backgroundColor = '#f27a1a';
+            document.querySelector('.navigation .list').style.backgroundColor = '#f27a1a';
+            document.querySelector('h2 span').style.color = '#f27a1a';
+            document.querySelector('.logo img').style.border = '1px solid #f27a1a';
+            document.querySelector('.logo img').style.borderRadius = '50%';
+            document.querySelector('.logo img').style.padding = '5px';
+            document.querySelector('.content a').style.backgroundColor = '#f27a1a';
+            document.querySelector('.sci').style.backgroundColor = '#f27a1a';
+        }
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    <!--All image are redesigned from https://thumbs.dreamstime.com/b/set-different-aluminum-soda-cans-isolated-
+            white-russia-moscow-july-background-collection-various-brands-drinks-95426013.jpg -->
+</body>
+
+</html>
